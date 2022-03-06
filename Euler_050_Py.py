@@ -1,7 +1,8 @@
 #Ariel Tynan
 #Euler Problem 050 Solved in Python
 #Consecutive prime sum
-#Started 5 March 2022
+#Started and solved 5 March 2022
+#Current compile time ~53s
 
 from numpy import sqrt
 
@@ -47,6 +48,6 @@ for i in range(len(primes)-1,1,-1):
         if tempListLen > tempMaxPrime and temp == 0: #checks to make sure values are equal
             tempMaxPrime = tempListLen
     max_primes[i] = tempMaxPrime
-    print(primes[i], tempMaxPrime)
+    #print(primes[i], tempMaxPrime)
 
 print(max(max_primes),primes[max_primes.index(max(max_primes))])  #list length and prime of interest
